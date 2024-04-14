@@ -13,7 +13,7 @@ class_data = {}
 unrecognized = {}
 
 FACE_SIMILARITY_THRESHOLD = 0.6
-DATABASE_CONNECTION_STRING = 'DRIVER={ODBC Driver 17 for SQL Server};Server=127.0.0.1;Database=master;Port=1433;UID=SA;PWD=LIUGgfds35DP9OAR;'
+DATABASE_CONNECTION_STRING = ''
 
 app = Flask(__name__)
 
@@ -146,4 +146,4 @@ def recognize_faces():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, threaded=True,
-            ssl_context=('/home/mati7v2/fullchain.pem', '/home/mati7v2/privkey.pem'))
+            ssl_context=('fullchain.pem', 'privkey.pem'))
